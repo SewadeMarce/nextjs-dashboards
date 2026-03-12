@@ -6,8 +6,8 @@ import  InvoicesSkeleton  from '@/app/ui/skeletons';
 export default async function Page({
   searchParams,
 }: {
-  searchParams?: {
-    query?: string;
+  searchParams: {
+    query: string;
   };
 }) {
   const query =( await searchParams)?.query || '';
