@@ -6,9 +6,7 @@ import  InvoicesSkeleton  from '@/app/ui/skeletons';
 export default async function Page({
   searchParams,
 }: {
-  searchParams: {
-    query: string;
-  };
+searchParams: Promise<{ query?: string }>;
 }) {
   const query =( await searchParams)?.query || '';
   const customers = await fetchFilteredCustomers(query);
