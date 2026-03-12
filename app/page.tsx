@@ -19,8 +19,7 @@ export default function Page() {
             </a>
             , brought to you by Vercel.
           </p>
-          {/* <div className="relative w-0 h-0 border-l-15 border-r-15 border-b-26 border-l-transparent border-r-transparent bo"
-          /> */}
+    
           <div className={styles.shape} />
 
           <Link
